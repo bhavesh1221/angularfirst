@@ -1,0 +1,7 @@
+<p>ngifelse works!</p>
+<h1>if heading variable is true</h1>
+<button (click)="click()">Click</button>
+<h2 *ngIf="heading; else galat">True</h2>
+<ng-template #galat>
+    <h2>False</h2>
+</ng-template>

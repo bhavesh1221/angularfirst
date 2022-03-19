@@ -1,0 +1,24 @@
+<div class="row">
+    <p>add a new server</p>
+    <div class="col-12">
+       <div>
+        <label for="">add server name</label>
+       </div>
+        <input type="text" [(ngModel)]="newServerName">
+
+      
+    
+    </div>
+    <div class="col-12">
+       <div>
+        <label for="">add server Content</label>
+       </div>
+        <input type="text" [(ngModel)]="newServerContent">
+    </div>
+    <div class="col-12">
+        <br>
+        <button class="btn btn-primary" (click) = "onAddserver()">add server</button> <br> <hr>
+        <button class="btn btn-primary" (click)="onAddBlueprint()">add server blueprint</button>
+    </div>
+</div>
+<hr>

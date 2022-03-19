@@ -1,0 +1,29 @@
+<h6>shoppinglist works!</h6>
+<div class="row">
+    <div class="col-6">
+        <div>
+            <label for="name">Name</label>
+        </div>
+        <input type="text" id="name">
+    </div>
+    <div class="col-6">
+        <div>
+            <label for="amount">Amount</label>
+        </div>
+        <input type="text" id="amount">
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-12">
+        <button class="btn btn-success me-4">Add</button>
+        <button class="btn btn-danger me-4">Delete</button>
+        <button class="btn btn-primary">Clear</button>
+    </div>    
+</div>
+<div class="row">
+    <div class="col-12">
+        <ol *ngFor="let item of shoppinglist">
+            <li> {{item.name}} price - {{item.amount}} </li>
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-todolist></app-todolist> -->
+<!-- <app-apicallonkeypress></app-apicallonkeypress> -->
+<!-- <app-stringinterpolation></app-stringinterpolation> -->
+<!-- <app-propertybinding></app-propertybinding>          -->
+<!-- <app-ngifelse></app-ngifelse> -->
+<!-- <app-ngstyle></app-ngstyle> -->
+<!-- <app-directivesassignment></app-directivesassignment> -->
+<!-- <div class="row">
+    <div class="col-12">
+        <label for="">Name of server</label>
+        <input type="text">
+        <button class="btn btn-primary" (click)="add($event)">
+            Add
+        </button>
+    </div>
+    <div class="col-12" *ngFor="let element of serverElements">
+        {{element.name}}
+    </div>
+</div> -->
+<app-cockpit></app-cockpit>
+<app-showingdata *ngFor="let serverElement of serverElements" [serElement]="serverElement"></app-showingdata>
+<!-- <app-showingdata [element] = "serverElements"></app-showingdata> -->
+<!-- <app-home></app-home> -->

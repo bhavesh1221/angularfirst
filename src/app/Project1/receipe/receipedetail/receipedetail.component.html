@@ -1,0 +1,18 @@
+<p>Receipe detail</p>
+<button class="btn btn-primary">Add receipe</button>
+<hr>
+<div class="row" style="margin:1px solid black" *ngFor="let item of receipe">
+    <div class="col-8">
+        <h4> {{item.name}} </h4>
+        <p> {{item.description}} </p>
+
+    </div>
+
+        <div class="col-4">
+            <!-- two ways to render image -->
+            <!-- src="{{item.imagePath}}" -->
+            <!-- [src]="item.imagePath" -->
+            <img width="50px" height="50px" [src]="item.imagePath" alt="">
+        </div>
+        <hr>
+</div>

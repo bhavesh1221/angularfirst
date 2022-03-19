@@ -1,0 +1,10 @@
+<h3>propertybinding works!</h3>
+<h4>this button will enable after three seconds using property binding</h4>
+<button [disabled]="enable" (click)="onClick()">click here</button>
+<h3>now here comes example of event binding</h3>
+<p>{{text}}</p>
+<h3>example of event binding by passing some event</h3>
+<input (keyup)="onlck($event)" type="text">
+<p>{{sometext}}</p>
+<h3>example of two way data binding</h3>
+<input type="text" [(ngModel)]="sometext">

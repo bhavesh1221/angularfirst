@@ -1,0 +1,10 @@
+<p>todolist works!</p>
+<h1>to do list program</h1>
+<input type="text" class="value" #inp>
+<button (click)="add(inp.value)">Add list</button>
+<ul >
+    <li *ngFor="let itemss of arr"> {{itemss.id }} and {{itemss.name }} <button (click)="remove(itemss.id)">remove</button> </li>
+</ul>
+
+
+

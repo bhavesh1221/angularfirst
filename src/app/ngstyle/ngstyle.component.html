@@ -1,0 +1,16 @@
+<p>ngstyle works!</p>
+<h3 [ngStyle]="{color:getColor()}">Server is {{getserverstatus()}}</h3>
+<p>ng class works!</p>
+
+<div [ngClass]="{redcolor: server === 'online', greencolor: server === 'offline'}">text color will change using ngclass</div>
+
+
+<div [ngClass]="{redcolor: getColorngclass()}">text color will change using ngclass using a function</div>
+
+
+<p>ngFor works</p>
+<input type="text" (keyup) = "add($event)">
+<button (click) ="added()" >add</button>
+<ol>
+    <li *ngFor="let item of items"> {{ item}}</li>
+</ol>
