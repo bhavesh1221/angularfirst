@@ -4,21 +4,22 @@
        <div>
         <label for="">add server name</label>
        </div>
-        <input type="text" [(ngModel)]="newServerName">
+       <!-- sending data using reference variable -->
+        <input type="text" #serverInput>
 
-      
-    
     </div>
     <div class="col-12">
        <div>
         <label for="">add server Content</label>
        </div>
+       <!-- sending data using two way data binding -->
         <input type="text" [(ngModel)]="newServerContent">
     </div>
     <div class="col-12">
         <br>
-        <button class="btn btn-primary" (click) = "onAddserver()">add server</button> <br> <hr>
-        <button class="btn btn-primary" (click)="onAddBlueprint()">add server blueprint</button>
+        <!-- <button class="btn btn-primary" (click) = "onAddserver(serverInput.value)">add server</button> <br> <hr> -->
+        <button class="btn btn-primary"  (click) = "onAddserver()">add server</button> <br> <hr>
+        <button class="btn btn-primary" (click) = "onAddBlueprint(serverInput.value)">add server blueprint</button>
     </div>
 </div>
 <hr>

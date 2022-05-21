@@ -1,13 +1,16 @@
-<div class="row">
+<div class="row"  >
     <div class="col-12">
         <div class="col-12">
-        <div style="color: green;">
-            {{element.name}}
-        </div>
+            <div *ngIf="element.type === 'server'" style="color: green;">
+                {{element.name}}
+            </div>
+            <div *ngIf="element.type === 'blueprint'" style="color: red;">
+                {{element.name}}
+            </div>
         <div style="color: red;">
             {{element.content}}
         </div>
-        <div>
+        <div style="color:blue">
             {{element.type}}
         </div>
     </div>

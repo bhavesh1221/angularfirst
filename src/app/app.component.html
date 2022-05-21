@@ -18,7 +18,11 @@
         {{element.name}}
     </div>
 </div> -->
-<app-cockpit></app-cockpit>
-<app-showingdata *ngFor="let serverElement of serverElements" [serElement]="serverElement"></app-showingdata>
+<app-cockpit (servercreated) = "onServerAdded($event)" (blueprintcreated) = "onBlueprintAddded($event)"></app-cockpit>
+<app-showingdata *ngFor="let serverElement of serverElements" [element]="serverElement"></app-showingdata>
 <!-- <app-showingdata [element] = "serverElements"></app-showingdata> -->
 <!-- <app-home></app-home> -->
+
+<!-- practice
+<app-cockpit (parentfn)="parentFun($event)"></app-cockpit>
+<app-showingdata></app-showingdata> -->
